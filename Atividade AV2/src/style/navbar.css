@@ -12,9 +12,10 @@ nav {
   align-items: center;
 }
 
-li {
+header nav ul li {
   display: inline;
   font-size: 1.15em;
+  padding-left: 1rem;
 }
 
 a {
