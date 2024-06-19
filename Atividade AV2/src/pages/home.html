@@ -18,7 +18,7 @@
                 <li><a href="../pages/home.html">Home</a></li>
                 <li><a href="../pages/games.html">Catálogo</a></li>
                 <li><a href="../pages/news.html">Notícias</a></li>
-                <li><button id="theme-toggle"><img src="../img/toggleTheme.png" alt="Alternar Tema"></button></li>
+                <li><button id="theme-toggle"><img src="../img/ToggleTheme.png" alt="Alternar Tema"></button></li>
             </ul>
         </nav>
     </header>
@@ -28,13 +28,13 @@
         <div class="carrossel">
             <div class="carrossel-inner">
                 <div class="carrossel-item active">
-                    <img src="../img/HollowKnight.jpg" alt="Hollow Knight">
+                    <a href="#"><img src="../img/HollowKnight.png" alt="Hollow Knight"></a>
                 </div>
                 <div class="carrossel-item">
-                    <img src="../img/CoolGamezLogo.png" alt="Image 2">
+                    <a href="#"><img src="../img/ForzaHorizon5.png" alt="Forza Horizon 5"></a>
                 </div>
                 <div class="carrossel-item">
-                    <img src="image3.jpg" alt="Image 3">
+                    <a href="#"><img src="../img/Cuphead.webp" alt="Cuphead"></a>
                 </div>
             </div>
             <button class="carrossel-control prev" onclick="moveSlide(-1)">&#10094;</button>
@@ -44,17 +44,61 @@
 
     <main>
         <h1>Destaques</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium at porro tenetur, consequuntur sit
-            quibusdam magnam ab consectetur ipsum cupiditate deserunt perferendis vero, eveniet assumenda, quisquam
-            eligendi corporis quam culpa!</p>
+        <section class="game-cards">
+            <table>
+                <tr>
+                    <td class="card">
+                        <a href="#">
+                            <img src="../img/Panicore.jpg" alt="Panicore">
+                            <p>$59.99</p>
+                        </a>
+                    </td>
+
+                    <td class="card">
+                        <a href="#">
+                            <img src="../img/EldenRing.jpg" alt="Elden Ring">
+                            <p>$39.99</p>
+                        </a>
+                    </td>
+                    <td class="card">
+                        <a href="#">
+                            <img src="../img/AssettoCorsa.jpg" alt="Assetto Corsa">
+                            <p>$49.99</p>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="card">
+                        <a href="#">
+                            <img src="../img/back4blood.jpg" alt="Back 4 Blood">
+                            <p>$29.99</p>
+                        </a>
+                    </td>
+                    <td class="card">
+                        <a href="#">
+                            <img src="../img/GTA_V.jpg" alt="FTA V">
+                            <p>$19.99</p>
+                        </a>
+                    </td>
+                    <td class="card">
+                        <a href="#">
+                            <img src="../img/ForzaCard.jpg" alt="Forza Horizon 5">
+                            <p>$69.99</p>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </section>
     </main>
 
     <footer class="footer">
         <div class="footer-section">
             <h3>Sobre Nós</h3>
-            <p>Na CoolGamez, acreditamos que os jogos são mais do que uma forma de entretenimento - eles são uma arte, uma cultura e
-            uma comunidade. Nossa missão é proporcionar aos nossos usuários a melhor experiência de jogo possível, oferecendo um
-            catálogo diversificado, notícias atualizadas e análises profundas.</p>
+            <p>Na CoolGamez, acreditamos que os jogos são mais do que uma forma de entretenimento - eles são uma arte,
+                uma cultura e
+                uma comunidade. Nossa missão é proporcionar aos nossos usuários a melhor experiência de jogo possível,
+                oferecendo um
+                catálogo diversificado, notícias atualizadas e análises profundas.</p>
         </div>
         <div class="footer-section">
             <h3>Redes Sociais</h3>
