@@ -1,9 +1,9 @@
-const setTheme = theme => document.documentElement.className = theme;
+// Carrossel
 
 let currentSlide = 0;
 
 function showSlide(index) {
-    const slides = document.querySelectorAll('.carousel-item');
+    const slides = document.querySelectorAll('.carrossel-item');
     if (index >= slides.length) {
         currentSlide = 0;
     } else if (index < 0) {
@@ -13,7 +13,7 @@ function showSlide(index) {
     }
 
     const offset = -currentSlide * 100;
-    document.querySelector('.carousel-inner').style.transform = `translateX(${offset}%)`;
+    document.querySelector('.carrossel-inner').style.transform = `translateX(${offset}%)`;
 
     slides.forEach((slide, idx) => {
         slide.classList.toggle('active', idx === currentSlide);
@@ -26,4 +26,9 @@ function moveSlide(direction) {
 
 document.addEventListener('DOMContentLoaded', () => {
     showSlide(currentSlide);
+});
+
+// Troca de Temas
+document.getElementById('theme-toggle').addEventListener('click', () => {
+    document.body.classList.toggle('dark-theme');
 });

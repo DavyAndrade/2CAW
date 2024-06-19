@@ -5,29 +5,42 @@
     <title>CoolGamez | News</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/src/style/style.css">
-    <link rel="stylesheet" href="/src/style/navbar.css">
-    <script src="/src/script/script.js"></script>
+    <link rel="stylesheet" href="../css/news.css">
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav class="navbar">
             <ul>
-                <li><a href="/src/pages/home.html" class="logo">CoolGamez</a></li>
-                <li><a href="/src/pages/home.html">Home</a></li>
-                <li><a href="/src/pages/games.html">Catálogo</a></li>
-                <li><a href="/src/pages/news.html">Notícias</a></li>
+                <li><a href="../pages/home.html" class="logo">CoolGamez</a></li>
+                <li><a href="../pages/home.html">Home</a></li>
+                <li><a href="../pages/games.html">Catálogo</a></li>
+                <li><a href="../pages/news.html">Notícias</a></li>
+                <li><button id="theme-toggle"><img src="../img/toggleTheme.png"></button></li>
             </ul>
-            <div class="toggle-container">
-                <button class="theme-btn light" onclick="setTheme('light')" title="Light mode"><img
-                        src="/src/img/toggleTheme.png"></button>
-                <button class="theme-btn dark"><img src="/src/img/toggleTheme.png" onclick="setTheme('dark')"
-                        title="Dark mode"></button>
-                </button>
-            </div>
         </nav>
     </header>
+
+    <footer class="footer">
+        <div class="footer-section">
+            <h3>Sobre Nós</h3>
+            <p>Info sobre a empresa.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Redes Sociais</h3>
+            <a href="#youtube">Youtube</a>
+            <a href="#instagram">Instagram</a>
+            <a href="#facebook">Facebook</a>
+        </div>
+        <div class="footer-section">
+            <h3>Contato</h3>
+            <a href="mailto:email@dominio.com">E-mail</a>
+            <a href="tel:+5511999999999">Telefone</a>
+        </div>
+    </footer>
+
+    <script src="../script/script.js"></script>
+
 </body>
 
 </html>
