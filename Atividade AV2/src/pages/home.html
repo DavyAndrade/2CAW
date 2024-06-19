@@ -23,67 +23,134 @@
         </nav>
     </header>
 
-    <!-- Carrossel -->
-    <div class="carrossel-container">
-        <div class="carrossel">
-            <div class="carrossel-inner">
-                <div class="carrossel-item active">
-                    <a href="#"><img src="../img/HollowKnight.png" alt="Hollow Knight"></a>
-                </div>
-                <div class="carrossel-item">
-                    <a href="#"><img src="../img/ForzaHorizon5.png" alt="Forza Horizon 5"></a>
-                </div>
-                <div class="carrossel-item">
-                    <a href="#"><img src="../img/Cuphead.webp" alt="Cuphead"></a>
-                </div>
-            </div>
-            <button class="carrossel-control prev" onclick="moveSlide(-1)">&#10094;</button>
-            <button class="carrossel-control next" onclick="moveSlide(1)">&#10095;</button>
-        </div>
-    </div>
+
 
     <main>
-        <h1>Destaques</h1>
+
+        <!-- Carrossel -->
+        <section class="carrossel-container">
+            <div class="carrossel">
+                <div class="carrossel-inner">
+                    <div class="carrossel-item active">
+                        <a href="#"><img src="../img/home/HollowKnight.png" alt="Hollow Knight"></a>
+                    </div>
+                    <div class="carrossel-item">
+                        <a href="#"><img src="../img/home/ForzaHorizon5.png" alt="Forza Horizon 5"></a>
+                    </div>
+                    <div class="carrossel-item">
+                        <a href="#"><img src="../img/home/Cuphead.webp" alt="Cuphead"></a>
+                    </div>
+                </div>
+                <button class="carrossel-control prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="carrossel-control next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </section>
+
+        <!-- Tabela de Destaques -->
         <section class="game-cards">
+
+            <h1>Destaques</h1>
+
             <table>
                 <tr>
                     <td class="card">
                         <a href="#">
-                            <img src="../img/Panicore.jpg" alt="Panicore">
-                            <p>$59.99</p>
-                        </a>
-                    </td>
-
-                    <td class="card">
-                        <a href="#">
-                            <img src="../img/EldenRing.jpg" alt="Elden Ring">
-                            <p>$39.99</p>
+                            <img src="../img/home/EldenRing.jpg" alt="ELDEN RING">
+                            <p class="titulo">ELDEN RING</p>
+                            <p>R$229,90</p>
                         </a>
                     </td>
                     <td class="card">
                         <a href="#">
-                            <img src="../img/AssettoCorsa.jpg" alt="Assetto Corsa">
-                            <p>$49.99</p>
+                            <img src="../img/home/FC24.jpg" alt="EA SPORTS FC™ 24">
+                            <p class="titulo">EA SPORTS FC™ 24</p>
+                            <p>R$359,00</p>
+                        </a>
+                    </td>
+                    <td class="card">
+                        <a href="#">
+                            <img src="../img/home/Destiny2.jpg" alt="Destiny 2">
+                            <p class="titulo">Destiny 2</p>
+                            <p>Gratuito</p>
                         </a>
                     </td>
                 </tr>
                 <tr>
                     <td class="card">
                         <a href="#">
-                            <img src="../img/back4blood.jpg" alt="Back 4 Blood">
-                            <p>$29.99</p>
+                            <img src="../img/home/GrandTheftAutoV.jpg" alt="Grand Theft Auto V">
+                            <p class="titulo">Grand Theft Auto V</p>
+                            <p>R$82,41</p>
                         </a>
                     </td>
                     <td class="card">
                         <a href="#">
-                            <img src="../img/GTA_V.jpg" alt="FTA V">
-                            <p>$19.99</p>
+                            <img src="../img/home/ForzaCard.jpg" alt="Forza Horizon 5">
+                            <p class="titulo">Forza Horizon 5</p>
+                            <p>R$124,50</p>
                         </a>
                     </td>
                     <td class="card">
                         <a href="#">
-                            <img src="../img/ForzaCard.jpg" alt="Forza Horizon 5">
-                            <p>$69.99</p>
+                            <img src="../img/home/RE4.jpg" alt="Resident Evil 4">
+                            <p class="titulo">Resident Evil 4</p>
+                            <p>R$126,75</p>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+
+        <!-- Tabela de Lançamentos -->
+        <section class="game-cards">
+
+            <h1>Lançamentos</h1>
+
+            <table>
+                <tr>
+                    <td class="card">
+                        <a href="#">
+                            <img src="../img/home/Panicore.jpg" alt="Panicore">
+                            <p class="titulo">Panicore</p>
+                            <p>R$16,99</p>
+                        </a>
+                    </td>
+                    <td class="card">
+                        <a href="#">
+                            <img src="../img/home/Avatar.jpg" alt="Avatar: Frontiers of Pandora™">
+                            <p class="titulo">Avatar: Frontiers of Pandora™</p>
+                            <p>R$179,99</p>
+                        </a>
+                    </td>
+                    <td class="card">
+                        <a href="#">
+                            <img src="../img/home/Bodycam.jpg" alt="Bodycam">
+                            <p>Bodycam</p>
+                            <p>R$101,99</p>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="card">
+                        <a href="#">
+                            <img src="../img/home/DontShoutTogether.jpg" alt="Don't Shout Together">
+                            <p class="titulo">Don't Shout Together</p>
+                            <p>R$14,44</p>
+                        </a>
+                    </td>
+                    <td class="card">
+                        <a href="#">
+                            <img src="../img/home/MurkyDivers.jpg" alt="Murky Divers">
+                            <p class="titulo">Murky Divers</p>
+                            <p>R$15,74</p>
+                        </a>
+                    </td>
+                    <td class="card">
+                        <a href="#">
+                            <img src="../img/home/Soulmask.jpg" alt="Soulmask">
+                            <p class="titulo">Soulmask</p>
+                            <p>R$89,99</p>
                         </a>
                     </td>
                 </tr>

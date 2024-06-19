@@ -10,7 +10,7 @@ body {
 
 :root {
   --background-color: #fff;
-  --text-color: #000;
+  --text-color: black;
   --card-border-color: #fff;
 }
 
@@ -62,11 +62,13 @@ body.dark-theme {
 .navbar .logo {
   font-size: 2rem;
   font-weight: bold;
+  padding: 1rem;
+  margin: 1rem;
 }
 
 /* Estilização do Carrossel */
 .carrossel-container {
-  margin-top: 8rem;
+  margin-top: 5rem;
 }
 
 .carrossel {
@@ -98,7 +100,8 @@ body.dark-theme {
   top: 50%;
   width: 50px;
   height: 50px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: black;
+  opacity: 60%;
   color: white;
   border: none;
   cursor: pointer;
@@ -109,18 +112,6 @@ body.dark-theme {
 
 .carrossel-control.prev {
   left: 10px;
-}
-
-.carrossel-text {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-  text-align: center;
 }
 
 .carrossel-control.next {
@@ -134,15 +125,23 @@ main {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-top: 5rem;
 }
 
-main p {
-  max-width: 800px;
+section {
+  padding: 1.5rem;
+}
+
+main h1 {
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 main a {
-  text-decoration: none;
+  color: var(--text-color);
+}
+
+.titulo {
+  font-weight: bold;
 }
 
 /* Tabela */
@@ -154,9 +153,8 @@ main a {
 
 .game-cards td {
   text-align: center;
-  padding: 10px;
-  border: 1px solid var(--card-border-color);
-  background-color: var(--background-color);
+  padding: 0.75rem;
+  border: none;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -165,14 +163,14 @@ main a {
   object-fit: cover;
 }
 
-.game-cards .card p {
+.game-cards .card p, .game-cards .card a {
   margin: 10px 0 0 0;
+  text-decoration: none;
   font-size: 16px;
   color: var(--text-color);
 }
 
 .game-cards .card:hover {
-  cursor: pointer;
   transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
