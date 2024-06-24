@@ -66,6 +66,30 @@ nav .logo {
   margin: 1rem;
 }
 
+/* Estilização da Página */
+main {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 7rem;
+}
+
+section {
+  padding: 1.5rem;
+}
+
+main h1 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  font-weight: bold;
+}
+
+main a {
+  color: var(--text-color);
+}
+
 /* Cards */
 .card-container {
   display: grid;
@@ -117,29 +141,6 @@ nav .logo {
   background-color: var(--background-color);
   color: var(--text-color);
   transform: rotateY(180deg);
-}
-
-/* Estilização da Página */
-main {
-  align-items: center;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 5rem;
-}
-
-section {
-  padding: 1.5rem;
-}
-
-main h1 {
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-main a {
-  color: var(--text-color);
 }
 
 /* Estilização do Footer */
