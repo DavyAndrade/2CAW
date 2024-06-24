@@ -21,7 +21,7 @@ body.dark-theme {
 }
 
 /* Estilização Navbar */
-.navbar {
+nav {
   position: fixed;
   top: 0;
   width: 100%;
@@ -29,7 +29,7 @@ body.dark-theme {
   z-index: 1000;
 }
 
-.navbar ul {
+nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -37,12 +37,12 @@ body.dark-theme {
   align-items: center;
 }
 
-.navbar li {
+nav li {
   padding: 1.3rem;
 }
 
-.navbar a,
-.navbar button {
+nav a,
+nav button {
   text-decoration: none;
   color: white;
   font-size: 18px;
@@ -51,15 +51,15 @@ body.dark-theme {
   cursor: pointer;
 }
 
-.navbar button {
+nav button {
   margin-left: 33rem;
 }
 
-.navbar button img {
+nav button img {
   height: 2rem;
 }
 
-.navbar .logo {
+nav .logo {
   font-size: 2rem;
   font-weight: bold;
   padding: 1rem;
@@ -88,44 +88,9 @@ main a {
   color: var(--text-color);
 }
 
-.titulo {
-  font-weight: bold;
-}
-
-/* Tabela */
-.game-cards table {
-  width: 100%;
-  margin: 20px auto;
-  border-collapse: collapse;
-}
-
-.game-cards td {
-  text-align: center;
-  padding: 0.75rem;
-  border: none;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.game-cards .card img {
-  height: 150px;
-  object-fit: cover;
-}
-
-.game-cards .card p, .game-cards .card a {
-  margin: 10px 0 0 0;
-  text-decoration: none;
-  font-size: 16px;
-  color: var(--text-color);
-}
-
-.game-cards .card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
 /* Estilização do Footer */
 
-.footer {
+footer {
   display: flex;
   justify-content: space-around;
   background-color: black;
@@ -155,7 +120,7 @@ main a {
   text-decoration: underline;
 }
 
-.footer p {
+footer p {
   max-width: 500px;
   text-align: center;
 }
