@@ -12,12 +12,16 @@ body {
   --background-color: #fff;
   --text-color: black;
   --card-border-color: #fff;
+  --sidebar-bg: #121212;
+  --sidebar-text: #fff;
 }
 
 body.dark-theme {
   --background-color: #121212;
   --text-color: #f1f1f1;
   --card-border-color: #121212;
+  --sidebar-bg: #fff;
+  --sidebar-text: #121212;
 }
 
 /* Estilização Navbar */
@@ -66,6 +70,13 @@ nav .logo {
   margin: 1rem;
 }
 
+/* Container Principal */
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+
 /* Estilização da Página */
 main {
   align-items: center;
@@ -73,21 +84,68 @@ main {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 7rem;
-}
-
-section {
-  padding: 1.5rem;
+  flex-grow: 1;
 }
 
 main h1 {
   font-size: 2rem;
   padding-bottom: 1rem;
+  margin-top: 5rem;
   font-weight: bold;
 }
 
 main a {
   color: var(--text-color);
+}
+
+/* Sidebar */
+aside {
+  color: white;
+  width: 350px;
+  padding: 1.5rem;
+  background-color: gray;
+  right: 0;
+  top: 0;
+  height: 1200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1rem;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+aside h2 {
+  margin-bottom: 1rem;
+  color: black;
+  text-decoration: underline;
+}
+
+aside ul {
+  list-style: none;
+  padding: 0;
+}
+
+aside li a {
+  margin-bottom: 1.5rem;
+  background-color: black;
+  border-radius: 5px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  align-items: center;
+  text-decoration: none;
+}
+
+aside img {
+  width: 100px;
+  object-fit: cover;
+  margin-right: 1rem;
+  border-radius: 10px;
+}
+
+aside a:hover {
+  text-decoration: underline;
 }
 
 /* Cards */
@@ -103,6 +161,11 @@ main a {
   width: 300px;
   height: 200px;
   perspective: 1000px;
+}
+
+.flip-card img {
+  height: 75px;
+  border-radius: 10px;
 }
 
 .flip-card-inner {
@@ -128,19 +191,21 @@ main a {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  color: black;
+  background-color: #bbb;
   padding: 20px;
+  border-radius: 10px;
   box-sizing: border-box;
 }
 
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
+.flip-card-back {
+  transform: rotateY(180deg);
 }
 
-.flip-card-back {
-  background-color: var(--background-color);
-  color: var(--text-color);
-  transform: rotateY(180deg);
+.flip-card-back a {
+  color: black;
+  text-decoration: none;
 }
 
 /* Estilização do Footer */
@@ -149,7 +214,7 @@ footer {
   justify-content: space-around;
   background-color: black;
   color: white;
-  padding: 20px 0;
+  padding: 3rem 0;
   position: relative;
   width: 100%;
 }
@@ -172,9 +237,4 @@ footer {
 
 .footer-section a:hover {
   text-decoration: underline;
-}
-
-footer p {
-  max-width: 500px;
-  text-align: center;
 }

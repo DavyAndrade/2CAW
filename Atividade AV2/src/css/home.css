@@ -140,6 +140,11 @@ main a {
   color: var(--text-color);
 }
 
+main p {
+  color: var(--text-color);
+  max-width: 500px;
+}
+
 .titulo {
   font-weight: bold;
 }
@@ -182,7 +187,7 @@ footer {
   justify-content: space-around;
   background-color: black;
   color: white;
-  padding: 20px 0;
+  padding: 3rem 0;
   position: relative;
   width: 100%;
 }
@@ -205,9 +210,4 @@ footer {
 
 .footer-section a:hover {
   text-decoration: underline;
-}
-
-footer p {
-  max-width: 500px;
-  text-align: center;
 }

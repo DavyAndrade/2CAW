@@ -68,34 +68,31 @@ nav .logo {
 
 /* Estilização da Página */
 main {
+  padding-top: 5rem;
   align-items: center;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 10rem;
+  flex-direction: row;
+}
+
+section {
+  padding: 1.5rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
-section {
-  padding: 1.5rem;
-}
 
-main h1 {
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-main a {
-  color: var(--text-color);
-}
 
 /* Estilização do Footer */
-
 footer {
   display: flex;
   justify-content: space-around;
   background-color: black;
   color: white;
-  padding: 20px 0;
+  padding: 3rem 0;
   position: relative;
   width: 100%;
 }
@@ -118,9 +115,4 @@ footer {
 
 .footer-section a:hover {
   text-decoration: underline;
-}
-
-footer p {
-  max-width: 500px;
-  text-align: center;
 }
