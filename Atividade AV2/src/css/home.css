@@ -150,32 +150,32 @@ main p {
 }
 
 /* Tabela */
-.game-cards table {
+table {
   width: 100%;
   margin: 20px auto;
   border-collapse: collapse;
 }
 
-.game-cards td {
+td {
   text-align: center;
   padding: 0.75rem;
   border: none;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.game-cards .card img {
+.card img {
   height: 150px;
   object-fit: cover;
 }
 
-.game-cards .card p, .game-cards .card a {
+.card p, .card a {
   margin: 10px 0 0 0;
   text-decoration: none;
   font-size: 16px;
   color: var(--text-color);
 }
 
-.game-cards .card:hover {
+.card:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }

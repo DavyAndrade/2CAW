@@ -71,40 +71,103 @@ main {
   align-items: center;
   text-align: center;
   display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  margin: 10rem;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 5rem;
 }
 
 section {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  align-items: center;
+  margin-top: 5rem;
 }
 
-img {
-  height: 5rem;
+table {
+  align-items: center;
+}
+
+th {
+  font-size: 2rem;
+}
+
+.titulo {
+  font-weight: bold;
+}
+
+/* Tabela */
+table {
+  width: 100%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+td {
+  text-align: center;
   padding: 1rem;
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+  height: 150px;
+  object-fit: cover;
+}
+
+.card p, .card a {
+  margin: 10px 0 0 0;
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .game-info {
   display: flex;
   flex-direction: row;
   align-items: center;
+  text-align: center;
+  padding-left: 1rem;
 }
 
 .game-info-reverse {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
+  text-align: center;
+  padding-right: 1rem;
 }
 
-main a {
-  color: var(--text-color);
+.game-card {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-bottom: 2rem;
+  width: 350px;
+  height: 200px;
+}
+
+.game-card img {
+  width: 6rem;
+  padding: 1rem;
+}
+
+.game-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.game-card a {
   text-decoration: none;
+  color: var(--text-color);
 }
 
-main a:hover {
+.game-card a:hover {
   text-decoration: underline;
 }
 
