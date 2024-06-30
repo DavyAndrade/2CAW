@@ -68,23 +68,45 @@ nav .logo {
 
 /* Estilização da Página */
 main {
-  padding-top: 5rem;
   align-items: center;
   text-align: center;
   display: flex;
   justify-content: space-between;
-  margin: 10rem;
   flex-direction: row;
+  margin: 10rem;
 }
 
 section {
-  padding: 1.5rem;
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  width: 100%;
 }
 
+img {
+  height: 5rem;
+  padding: 1rem;
+}
 
+.game-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.game-info-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+main a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+main a:hover {
+  text-decoration: underline;
+}
 
 /* Estilização do Footer */
 footer {
