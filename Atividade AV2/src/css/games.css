@@ -6,12 +6,15 @@ body {
   box-sizing: border-box;
   background-color: var(--background-color);
   color: var(--text-color);
+  transition: background-color 0.2s ease, box-shadow 0.3s ease;
 }
 
 :root {
   --background-color: #fff;
   --text-color: black;
   --card-border-color: #fff;
+  --background-color-light: #ffffff;
+  --background-color-dark: #121212;
 }
 
 body.dark-theme {
@@ -98,10 +101,16 @@ th {
 
 /* Tabela */
 table {
-  width: 100%;
-  margin: 20px auto;
-  border-collapse: collapse;
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: var(--background-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: background-color 0.2s ease, box-shadow 0.3s ease;
 }
+
+
 
 td {
   text-align: center;
@@ -123,7 +132,7 @@ td {
 }
 
 .card:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
